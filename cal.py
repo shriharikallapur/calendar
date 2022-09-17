@@ -4,7 +4,6 @@ import datetime
 from tkcalendar import *
 
 customtkinter.set_appearance_mode("Dark")
-customtkinter.set_default_color_theme("green")
 
 mydate = datetime.datetime.now()
 mydate.strftime("%B")
@@ -17,7 +16,7 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("CustomTkinter complex_example.py")
+        self.title("My Calendar")
         self.geometry(f"{App.WIDTH}x{App.HEIGHT}")
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
